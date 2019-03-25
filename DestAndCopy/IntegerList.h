@@ -16,4 +16,5 @@ public:
    int getNumElements() const;
    ~IntegerList();
    IntegerList(const IntegerList &obj);
+
 };
