@@ -20,4 +20,5 @@ int main()
 	cout << "A's values:" << endl;
 	display(a);
 
+	return 0;
 }

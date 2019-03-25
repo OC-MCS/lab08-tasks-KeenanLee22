@@ -71,3 +71,19 @@ int IntegerList::getNumElements() const
 {
 	return numElements;
 }
+
+IntegerList::~IntegerList()
+{
+	delete [] list;
+}
+
+IntegerList::IntegerList(const IntegerList & obj)
+{
+	numElements = obj.numElements;
+	list = new int[numElements];
+	for (int i = 0; i < numElements; i++)
+	{
+		list[i] = obj.list[i];
+	}
+
+}
